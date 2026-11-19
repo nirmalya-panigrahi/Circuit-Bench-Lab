@@ -10,9 +10,11 @@ export default defineConfig({
     },
   },
   test: {
-    environment: 'jsdom',
-    globals: true,
-    setupFiles: ['./src/tests/setup.ts'],
-    include: ['src/tests/**/*.test.{ts,tsx}'],
+  environment: 'jsdom',
+  globals: true,
+  setupFiles: ['./src/tests/setup.ts'],
+  include: ['src/tests/**/*.test.{ts,tsx}'],
+  pool: 'threads',
+  maxWorkers: 2,
   },
 });
