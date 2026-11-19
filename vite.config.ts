@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Circuit-Bench-Lab/',,
+    base: '/Circuit-Bench-Lab/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
