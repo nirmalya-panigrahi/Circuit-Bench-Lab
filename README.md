@@ -82,4 +82,4 @@ npm run build
 ## Automated Testing & CI/CD
 
 - **Unit & Integration Tests**: `npm test` executes Vitest across all math/physics engines (`src/tests/*.test.ts`) and React Testing Library component flows (`src/tests/appIntegration.test.tsx`), covering both happy-path ("Blue Pill") and adversarial edge-case ("Red Pill") inputs.
-- **GitHub Pages Deployment**: `.github/workflows/deploy.yml` runs tests, TypeScript linting, Vite build (`base: '/Smiths-Chart-Interactive/'`), and deploys `./dist` to GitHub Pages on every push to `main`.
+- **GitHub Pages Deployment**: `.github/workflows/deploy.yml` runs tests, TypeScript linting, Vite build (`base: '/Circuit-Bench-Lab/'`), and deploys `./dist` to GitHub Pages on every push to `main` (requires `package-lock.json` committed for `npm ci --legacy-peer-deps`).
